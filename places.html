@@ -1,37 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="assets/web icon.png" type="image/x-icon">
-    <title>Đi đâu nào?</title>
-  </head>
-  <body>
-    <nav>
-      <div class="nav__logo"><a href="#">Du lịch Nghĩa Hành</a></div>
-      <ul class="nav__links">
-        <li class="link"><a href="index.html">Trang chủ</a></li>
-        <li class="link"><a href="food.html">Ăn gì</a></li>
-        <li class="link"><a href="places.html">Đi đâu</a></li>
-        <li class="link"><a href="services.html">Dịch vụ</a></li>
-      </ul>
-    </nav>
-    <section class="placebanner__container">
-      <div class="section__container">
-        <div class="placebanner__content">    
-            <h2>Khám phá những địa điểm hay ho!</h2>
-            <p>
-                Huyện Nghĩa Hành không chỉ có cảnh sắc thiên nhiên yên bình mà còn sở hữu những địa điểm tham 
-                quan đầy cuốn hút như khu du lịch Suối Chí, làng cổ Thiên Xuân, và đèo Đồng Ngỗ. Mỗi nơi đều 
-                mang trong mình câu chuyện riêng, từ dòng suối mát rượi uốn lượn giữa núi rừng đến những làng 
-                quê lưu giữ nét xưa cũ. Đây là điểm dừng chân lý tưởng cho du khách muốn hòa mình vào vẻ đẹp 
-                hoang sơ và trải nghiệm không khí đậm chất miền Trung.
-            </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/web icon.png" type="image/x-icon">
+  <title>Đi đâu nào?</title>
+</head>
+<body>
+  <nav>
+    <div class="nav__logo"><a href="#">Du lịch Nghĩa Hành</a></div>
+    <ul class="nav__links">
+      <li class="link"><a href="index.html">Trang chủ</a></li>
+      <li class="link"><a href="food.html">Ăn gì</a></li>
+      <li class="link"><a href="places.html">Đi đâu</a></li>
+      <li class="link"><a href="services.html">Dịch vụ</a></li>
+    </ul>
+  </nav>
+  <section class="placebanner__container">
+    <div class="section__container">
+      <div class="placebanner__content">
+        <h2>Khám phá những địa điểm hay ho!</h2>
+        <p>
+          Huyện Nghĩa Hành không chỉ có cảnh sắc thiên nhiên yên bình mà còn sở hữu những địa điểm tham
+          quan đầy cuốn hút như khu du lịch Suối Chí, làng cổ Thiên Xuân, và đèo Đồng Ngỗ. Mỗi nơi đều
+          mang trong mình câu chuyện riêng, từ dòng suối mát rượi uốn lượn giữa núi rừng đến những làng
+          quê lưu giữ nét xưa cũ. Đây là điểm dừng chân lý tưởng cho du khách muốn hòa mình vào vẻ đẹp
+          hoang sơ và trải nghiệm không khí đậm chất miền Trung.
+        </p>
+      </div>
+    </div>
+    <br>
+  </section>
+
+  <!--Suối chí-->
+
+  <section class="main-content">
+    <div class="section__container">
+      <div class="content__row">
+        <div class="content__column">
+          <div class="map-and-image">
+            <label for="toggle-map-img" class="map-on">Xem bản đồ</label>
+            <label for="toggle-map-img" class="image-on">Xem ảnh</label>
+            <input id="toggle-map-img" type="checkbox" checked style="display: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7712.3077847032255!2d108.80508588614504!3d14.872670762036591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3168fd6c26686a47%3A0x5a1330df6625283a!2zS2h1IGR1IGzhu4tjaCBTaW5oIHRow6FpIFN14buRaSBDaMOt!5e0!3m2!1svi!2s!4v1731639428995!5m2!1svi!2s" 
+              width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <img src="assets/suoi-chi-1.jpeg" alt="suoi-chi" />
           </div>
         </div>
-        </section>
+        <div class="content__column" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+          <h3 style="font-size: 24px; color: #000000; margin-bottom: 15px;">Suối Chí</h3>
+          <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+            Suối Chí, nằm ở huyện Nghĩa Hành, tỉnh Quảng Ngãi, là một điểm du lịch sinh thái nổi tiếng, thu hút du khách 
+            bởi vẻ đẹp hoang sơ và không khí trong lành. Với làn nước trong xanh mát mẻ chảy qua các ghềnh đá tự nhiên, 
+            Suối Chí tạo nên khung cảnh thơ mộng, yên bình, phù hợp cho các hoạt động nghỉ dưỡng và khám phá thiên nhiên.
+          </p>
+          <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+            <strong>Vị trí và cảnh quan:</strong> Suối Chí được bao quanh bởi núi rừng bạt ngàn, đem lại 
+            cảm giác thư thái và tách biệt với nhịp sống ồn ào của thành phố. Khu vực này nổi bật với các 
+            bãi cỏ xanh mướt, các tán cây rậm rạp và dòng suối trong lành, lý tưởng cho các chuyến dã ngoại 
+            và cắm trại.
+          </p>
+          <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+            <strong>Hoạt động và dịch vụ:</strong> Tại Suối Chí, du khách có thể tận hưởng các hoạt động như 
+            tắm suối, leo núi, và tổ chức picnic cùng gia đình và bạn bè. Đặc biệt, nơi đây cũng có các dịch 
+            vụ ẩm thực với những món ăn đặc sản địa phương, giúp du khách trải nghiệm trọn vẹn hương vị vùng 
+            đất Quảng Ngãi.
+          </p>
+          <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+            <strong>Thông tin cần biết:</strong>
+            <ul style="margin-left: 20px;">
+              <li>Địa chỉ: Huyện Nghĩa Hành, tỉnh Quảng Ngãi.</li>
+              <li>Giờ mở cửa: Từ 8:00 đến 17:00 hàng ngày.</li>
+              <li>Giá vé: Phụ thuộc vào thời điểm và dịch vụ, thường từ 20.000 VNĐ đến 50.000 VNĐ.</li>
+            </ul>
+          </p>
+        </div>        
+      </div>
+    </div>
+    </section>
+  <hr>
+<!--Suối chí-->
+
+<!-- Thác savan -->
+
+<section class="main-content">
+  <div class="section__container">
+    <div class="content__row">
+      <div class="content__column">
+        <div class="map-and-image">
+          <label for="toggle-map-img-1" class="map-on">Xem bản đồ</label>
+          <label for="toggle-map-img-1" class="image-on">Xem ảnh</label>
+          <input id="toggle-map-img-1" type="checkbox" checked style="display: none;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.5601504423457!2d108.67677787371288!3d15.01710236674668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3169a90a9f0e14b5%3A0x7a9aeee3be361375!2zVGjDoWMgU2F2YW4gKER1IGzhu4tjaCBDSMOCVSBLScOKTik!5e0!3m2!1svi!2s!4v1731640629544!5m2!1svi!2s"
+            width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <img src="assets/thac-savan.jpg" alt="thac-savan" />
+        </div>
+      </div>
+      <div class="content__column" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h3 style="font-size: 24px; color: #000000; margin-bottom: 15px;">Thác Savan</h3>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          Thác Savan là một thắng cảnh thiên nhiên tuyệt đẹp nằm tại thôn Gò Tranh, xã Long Sơn, huyện Minh Long, 
+          tỉnh Quảng Ngãi, cách trung tâm thành phố khoảng hơn 20 km về phía Tây Nam.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Truyền thuyết về tên gọi:</strong> Theo truyền thuyết, tên gọi "Savan" bắt nguồn từ câu chuyện 
+          về một cô gái người Hrê tên Savan. Do trắc trở trong tình duyên, cô đã tìm đến ngọn thác và gieo mình 
+          vào dòng nước để quên đi nỗi đau. Để tưởng nhớ cô, người dân địa phương đã đặt tên thác là Savan.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Hoạt động du lịch:</strong> Thác Savan nổi bật với dòng nước trắng xóa chảy qua những tảng đá 
+          lớn, tạo nên cảnh quan hùng vĩ giữa núi rừng. Du khách có thể tắm mát trong làn nước trong xanh, tận 
+          hưởng không khí trong lành và tham gia các hoạt động dã ngoại như cắm trại, picnic. Ngoài ra, khu vực 
+          xung quanh thác còn có những con đường mòn dẫn qua rừng cây, thích hợp cho những ai yêu thích khám phá 
+          thiên nhiên.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Lưu ý khi tham quan:</strong>
+          <ul style="margin-left: 20px;">
+            <li>Trang phục: Nên mặc quần áo gọn nhẹ, mang giày thể thao để dễ dàng di chuyển trên địa hình đồi núi.</li>
+            <li>Đồ dùng cá nhân: Mang theo nước uống, đồ ăn nhẹ, mũ nón và kem chống nắng nếu cần.</li>
+            <li>An toàn: Đường lên thác có thể dốc và trơn trượt do rêu phong; hãy cẩn thận khi di chuyển.</li>
+            <li>Bảo vệ môi trường: Thu gom rác thải và không chặt phá cây cối để giữ gìn vẻ đẹp tự nhiên của khu vực.</li>
+          </ul>
+        </p>
+      </div>        
+    </div>
+  </div>
+  </section>
+<hr>
+<!-- Thác savan -->
+
+<!-- Kananui -->
+<section class="main-content">
+  <div class="section__container">
+    <div class="content__row">
+      <div class="content__column">
+        <div class="map-and-image">
+          <label for="toggle-map-img-2" class="map-on">Xem bản đồ</label>
+          <label for="toggle-map-img-2" class="image-on">Xem ảnh</label>
+          <input id="toggle-map-img-2" type="checkbox" checked style="display: none;">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15411.0462838616!2d108.68866998748723!3d15.061298475418496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3169a94b6efd29b1%3A0xaf65c43c33b1aaf3!2zRHUgbOG7i2NoIHNpbmggdGjDoWkgS0FMQU5VSSAtIE5naMSpYSBIw6BuaCwgUXXhuqNuZyBOZ8OjaQ!5e0!3m2!1svi!2s!4v1731640577610!5m2!1svi!2s" 
+           width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <img src="assets/kalunui-eco-tour.jpg" alt="kalunui-eco-tour" />
+        </div>
+      </div>
+      <div class="content__column" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h3 style="font-size: 24px; color: #000000; margin-bottom: 15px;">Khu du lịch sinh thái Kalanui</h3>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          Khu du lịch sinh thái Kalanui, tọa lạc tại Đèo Chim Hút, xã Hành Dũng, huyện Nghĩa Hành, tỉnh Quảng Ngãi, 
+          là điểm đến lý tưởng cho những ai yêu thích thiên nhiên và muốn trải nghiệm không gian yên bình. Với diện 
+          tích khoảng 15 hecta, Kalanui được bao quanh bởi suối KaLa và cảnh quan núi rừng hoang sơ, mang đến không 
+          khí trong lành và thư giãn cho du khách. 
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Vị trí và cảnh quan:</strong> Khu du lịch sinh thái Kalanui, tọa lạc tại Đèo Chim Hút, xã Hành Dũng, huyện Nghĩa Hành, tỉnh Quảng Ngãi, là điểm đến lý tưởng cho những ai yêu thích thiên nhiên và muốn trải nghiệm không gian yên bình. Với diện tích khoảng 15 hecta, Kalanui được bao quanh bởi suối KaLa và cảnh quan núi rừng hoang sơ, mang đến không khí trong lành và thư giãn cho du khách.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Hoạt động và dịch vụ:</strong> Tại Kalanui, du khách có thể tận hưởng các hoạt động như tắm suối, leo núi, và tổ chức picnic cùng gia đình và bạn bè. Đặc biệt, nơi đây cũng có các dịch vụ ẩm thực với những món ăn đặc sản địa phương, giúp du khách trải nghiệm trọn vẹn hương vị vùng đất Quảng Ngãi.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Thông tin cần biết:</strong>
+          <ul style="margin-left: 20px;">
+            <li>Địa chỉ: Đèo Chim Hút, xã Hành Dũng, huyện Nghĩa Hành, tỉnh Quảng Ngãi.</li>
+            <li>Giá vé: Người lớn: 30.000 VNĐ; Thiếu niên: 10.000 VNĐ; Trẻ em và người cao tuổi: Miễn phí.</li>
+            <li>Giờ mở cửa: Từ 6:30 đến 18:00 hàng ngày.</li>
+            <li>Liên hệ: Số điện thoại: 0979 799 366.</li>
+          </ul>
+        </p>
+      </div>        
+    </div>
+  </div>
+  </section>
+  <hr>
+<!-- Kalanui -->
+
+<!-- Làng cổ thiên xuân -->
+<section class="main-content">
+  <div class="section__container">
+    <div class="content__row">
+      <div class="content__column">
+        <div class="map-and-image">
+          <label for="toggle-map-img-3" class="map-on">Xem bản đồ</label>
+          <label for="toggle-map-img-3" class="image-on">Xem ảnh</label>
+          <input id="toggle-map-img-3" type="checkbox" checked style="display: none;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6100.440026322431!2d108.77965286976601!3d14.934178487649405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316901b540000001%3A0x52c1062c6761409f!2zTMOgbmcgY-G7lSBUaGnDqm4gWHXDom4!5e0!3m2!1svi!2s!4v1731642305756!5m2!1svi!2s"
+            width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <img src="assets/lang-co-thien-xuan.jpg" alt="lang-co-thien-xuan" />
+        </div>
+      </div>
+      <div class="content__column" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h3 style="font-size: 24px; color: #000000; margin-bottom: 15px;">Làng cổ Thiên Xuân</h3>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          Làng cổ Thiên Xuân nằm dưới chân núi Nứa, thuộc thôn Thiên Xuân, xã Hành Tín Đông, huyện Nghĩa Hành, 
+          tỉnh Quảng Ngãi. Đây là một ngôi làng cổ kính, mang đậm dấu ấn lịch sử và văn hóa của người Việt trong 
+          quá trình di cư về phương Nam.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Lịch sử và cấu trúc:</strong> Theo các nghiên cứu khảo cổ, làng cổ Thiên Xuân được hình thành vào 
+          khoảng thế kỷ XV, do người Việt từ vùng Thanh Hóa và Nghệ An di cư đến sinh sống. Ngôi làng từng có hơn 
+          40 hộ dân với đầy đủ các thiết chế như cổng làng, cây đa, giếng nước và hệ thống thành đá bao quanh. 
+          Thành đá có chiều cao khoảng 2,5 mét, rộng 1 mét, được xếp chồng từ các tảng đá lớn mà không sử dụng 
+          chất kết dính, tạo nên một công trình kiên cố và độc đáo.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Dấu tính hiện còn.</strong>
+          <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+            Hiện nay, mặc dù nhiều công trình đã bị thời gian và thiên nhiên bào mòn, nhưng một số dấu tích 
+            vẫn còn tồn tại, như:
+          <ul style="margin-left: 20px;">
+            <li>Thành đá: Hệ thống thành đá bao quanh làng vẫn còn khá nguyên vẹn, thể hiện kỹ thuật xây dựng độc đáo của người xưa.</li>
+            <li>Giếng nước cổ: Một số giếng nước cổ vẫn còn, minh chứng cho đời sống sinh hoạt của cư dân thời kỳ trước.</li>
+            <li>Cây đa cổ thụ: Cây đa từng là biểu tượng của làng, gắn liền với các hoạt động văn hóa và tín ngưỡng của cộng đồng.</li>
+          </ul>
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Ý nghĩa văn hoá:</strong> Làng cổ Thiên Xuân không chỉ là một di tích lịch sử mà còn phản ánh quá 
+          trình giao thoa văn hóa giữa người Việt và các dân tộc bản địa. Việc xây dựng thành đá bao quanh làng cho 
+          thấy sự kết hợp giữa kỹ thuật xây dựng của người Việt và người Hrê, nhằm bảo vệ cộng đồng khỏi thú dữ và 
+          các mối đe dọa khác.
+          thiên nhiên.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Tham quan và trải nghiệm:</strong>
+          <ul style="margin-left: 20px;">
+            <li>Khám phá kiến trúc cổ: Tìm hiểu về kỹ thuật xây dựng thành đá và các công trình khác của người xưa.</li>
+            <li>Tìm hiểu lịch sử: Nghe kể về quá trình hình thành và phát triển của làng, cũng như cuộc sống của cư dân qua các thời kỳ.</li>
+            <li>Trải nghiệm văn hóa địa phương: Tham gia vào các hoạt động văn hóa, tín ngưỡng và thưởng thức ẩm 
+              thực truyền thống của người dân địa phương.</li>
+          </ul>
+        </p>
+      </div>        
+    </div>
+  </div>
+</section>
+<hr>
+<!-- Đèo Đồng Ngỗ -->
+
+<section class="main-content">
+  <div class="section__container">
+    <div class="content__row">
+      <div class="content__column">
+        <div class="map-and-image">
+          <label for="toggle-map-img-4" class="map-on">Xem bản đồ</label>
+          <label for="toggle-map-img-4" class="image-on">Xem ảnh</label>
+          <input id="toggle-map-img-4" type="checkbox" checked style="display: none;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.297094445277!2d108.78773687371086!3d14.920532369166555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316901c42e8d90f5%3A0x78d06c91ecaace57!2zxJDDqG8gxJDhu5NuZyBOZ-G7lw!5e0!3m2!1svi!2s!4v1731643099914!5m2!1svi!2s"
+            width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <img src="assets/lang-co-thien-xuan.jpg" alt="lang-co-thien-xuan" />
+        </div>
+      </div>
+      <div class="content__column" style="max-width: 900px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; line-height: 1.6;">
+        <h3 style="font-size: 24px; color: #000000; margin-bottom: 15px;">Đèo Đồng Ngỗ</h3>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          Đèo Đồng Ngỗ nằm giữa núi Cối và núi Giàng, thuộc xã Hành Tín Đông, huyện Nghĩa Hành, tỉnh Quảng Ngãi. 
+          Với chiều dài khoảng 2 km, đèo được biết đến với cảnh quan thiên nhiên hùng vĩ và không khí trong lành, 
+          thu hút nhiều du khách và phượt thủ đến khám phá.
+        </p>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Đặc điểm nổi bật:</strong>
+        </p>
+        <ul style="margin-left: 20px;">
+          <li>Địa hình: Đèo Đồng Ngỗ có độ dốc vừa phải và ít khúc cua gấp, giúp việc di chuyển trở nên thuận lợi 
+            hơn so với nhiều đèo khác.</li>
+          <li>Cảnh quan: Hai bên đường đèo là những cánh rừng xanh mát và thung lũng sâu, tạo nên bức tranh thiên 
+            nhiên thơ mộng. Từ đỉnh đèo, du khách có thể phóng tầm mắt ngắm nhìn toàn cảnh vùng trung du Nghĩa Hành.</li>
+          <li>Khí hậu: Nhờ vị trí địa lý đặc biệt, đèo Đồng Ngỗ đón nhận nhiều luồng gió mát, mang lại cảm giác dễ 
+            chịu cho người tham quan.</li>
+        </ul>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Hoạt động du lịch:</strong>
+          <ul style="margin-left: 20px;">
+            <li>Chụp ảnh: Với khung cảnh thiên nhiên tuyệt đẹp, đây là địa điểm lý tưởng để ghi lại những bức ảnh ấn tượng.</li>
+            <li>Phượt: Đèo Đồng Ngỗ là cung đường hấp dẫn cho những ai đam mê phượt, muốn trải nghiệm cảm giác chinh phục và khám phá.</li>
+            <li>Tham quan: Kết hợp chuyến đi với việc ghé thăm các điểm du lịch lân cận như khu du lịch Suối Chí, làng cổ Thiên Xuân để có trải nghiệm đa dạng hơn.</li>
+          </ul>
+        <p style="font-size: 16px; color: #000000; text-align: justify; margin-bottom: 20px;">
+          <strong>Lưu ý:</strong>
+          <ul style="margin-left: 20px;">
+            <li>An toàn giao thông: Mặc dù đèo có ít khúc cua gấp, nhưng du khách vẫn nên lái xe cẩn thận, đặc biệt trong điều kiện thời tiết xấu.</li>
+            <li>Chuẩn bị: Mang theo nước uống, đồ ăn nhẹ và các vật dụng cần thiết, vì khu vực này còn hoang sơ và ít dịch vụ.</li>
+            <li>Bảo vệ môi trường: Giữ gìn vệ sinh, không xả rác bừa bãi để bảo vệ cảnh quan thiên nhiên.</li>
+          </ul>
+        </p>
+      </div>        
+    </div>
+  </div>
+</section>
+<hr>
+<!-- Đèo Đồng Ngỗ -->
+
+</section>
+</body>
+</html>

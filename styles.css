@@ -369,3 +369,98 @@ header .section__container {
   font-size: 1rem;
   cursor: pointer;
 }
+
+/*
+* Đi đâu
+*/
+.main-content .section__container {
+  padding: 0;
+  max-width: unset;
+}
+
+.main-content .section__container .content__row {
+  display: flex;
+}
+
+.main-content .section__container .content__row .content__column {
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-content .section__container .content__row .content__column h3 {
+  margin-bottom: 1.5rem;
+}
+
+.main-content:nth-of-type(2n) .section__container .content__row {
+  flex-direction: row-reverse;
+}
+
+/* Ảnh và bản đồ chung 1 khung hiển thị */
+.map-and-image {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+.map-and-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.map-and-image iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+/* nút chuyển đổi ảnh và bản đồ */
+.map-and-image label {
+  position: absolute;
+  z-index: 999;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.map-and-image label:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Chuyển đổi button khi nhấn */
+.map-and-image:has(input[type="checkbox"]) label:nth-child(1) {
+  display: inline;
+}
+.map-and-image:has(input[type="checkbox"]) label:nth-child(2) {
+  display: none;
+}
+.map-and-image:has(input[type="checkbox"]:not(:checked)) label:nth-child(1) {
+  display: none;
+}
+.map-and-image:has(input[type="checkbox"]:not(:checked)) label:nth-child(2) {
+  display: inline;
+}
+
+/* Chuyển đổi ảnh và bản đồ khi click vào nút */
+.map-and-image [type="checkbox"]:checked + img {
+  display: block;
+}
+.map-and-image [type="checkbox"]:checked + iframe {
+  display: none;
+}
+
+.map-and-image [type="checkbox"]:not(:checked) + img {
+  display: none;
+}
+.map-and-image [type="checkbox"]:not(:checked) + iframe {
+  display: block;
+}
